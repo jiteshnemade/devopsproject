@@ -1,4 +1,4 @@
 package org.service;
 
-public class QuestionService {
+public interface QuestionService {
 }

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="queryForum:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>queryForum</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="academic-erp.war">
+      <element id="artifact" artifact-name="queryForum:war exploded" />
+    </root>
+  </artifact>
+</component>
