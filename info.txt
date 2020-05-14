@@ -1,0 +1,20 @@
+# cookies are added having names  queryForum_name , queryForum_username , queryForum_useremail ,queryForum_userid
+
+need to add following script in head of each html file except login and sign_up.
+
+
+    <script>
+        function redir() {
+            if(!checkLoggedIn()) {
+                window.location.href = "/queryForum_war/login.html";
+            }
+        }
+    </script>
+
+And change body tag as <body onLoad="redir();">
+
+Also methods defined in js/cookie.js file to access logged in user details.
+
+All cookies kept until logout or 30 min whichever is less;
+
+Logout service is defined at webapi/user/logout which delete all cookies.

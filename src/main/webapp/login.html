@@ -53,12 +53,20 @@
 
     <!-- jQuery -->
     <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="js/cookie.js"></script>
+    <script>
+        function redir() {
+            if(checkLoggedIn()) {
+                window.location.href = "/queryForum_war/account.html";
+            }
+        }
+    </script>
     
     
 </head>
 
 
-<body>
+<body onLoad="redir();">
 
 
 
