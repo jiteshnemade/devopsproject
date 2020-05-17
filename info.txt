@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # cookies are added having names  queryForum_name , queryForum_username , queryForum_useremail ,queryForum_userid
 
 need to add following script in head of each html file except login and sign_up.
@@ -18,3 +19,14 @@ Also methods defined in js/cookie.js file to access logged in user details.
 All cookies kept until logout or 30 min whichever is less;
 
 Logout service is defined at webapi/user/logout which delete all cookies.
+=======
+Table (columns)
+
+1. User(user_id -- PK + auto increment, user_name, password)
+2. Question(ques_id PK + auto increment, text,  timestamp, user_id(FK))
+3. Answer(ans_id PK + auto increment, text, user_id(FK), timestamp, ques_id(FK))
+4. Tag (tag_id PK + auto increment, tag_name)
+5. Ques_Tag(tag_id(FK), ques_id(FK))
+6. Question_vote(ques_id, user_id, vote()
+7. Answer_vote(ans_id, user_id, vote(+1 for up, -1 for down?))
+>>>>>>> Stashed changes
