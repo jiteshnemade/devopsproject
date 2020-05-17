@@ -49,32 +49,6 @@ public class UserController {
             //NewCookie cookie = new NewCookie("queryForum_username", username);
 
 
-
-            /**
-             * Create a new instance.
-             *
-             * @param name    the name of the cookie.
-             * @param value   the value of the cookie.
-             * @param path    the URI path for which the cookie is valid.
-             * @param domain  the host domain for which the cookie is valid.
-             * @param comment the comment.
-             * @param maxAge  the maximum age of the cookie in seconds.
-             * @param secure  specifies whether the cookie will only be sent over a secure connection.
-             * @throws IllegalArgumentException if name is {@code null}.
-             */
-
-              /*
-    public NewCookie(String name,
-                    String value,
-                    String path,
-                    String domain,
-                    String comment,
-            int maxAge,
-            boolean secure) {
-                this(name, value, path, domain, DEFAULT_VERSION, comment, maxAge, null, secure, false);
-            }*/
-
-
             NewCookie cookie1 = new NewCookie("queryForum_username",user.getUserName(),"/","localhost","my first cookie",30*60,false);
             NewCookie cookie2 = new NewCookie("queryForum_userid",""+user.getUserId(),"/","localhost","my first cookie",30*60,false);
             NewCookie cookie3 = new NewCookie("queryForum_useremail",user.getEmail(),"/","localhost","my first cookie",30*60,false);

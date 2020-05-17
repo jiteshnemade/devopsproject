@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="academic-erp.war">
+    <root id="archive" name="queryForum.war">
       <element id="artifact" artifact-name="queryForum:war exploded" />
     </root>
   </artifact>

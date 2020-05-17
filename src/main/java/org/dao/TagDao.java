@@ -1,28 +1,27 @@
 package org.dao;
 
-import org.bean.Question;
 import org.bean.Tag;
+import org.bean.User;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.util.SessionUtil;
 
-public class QuestionDao {
+public class TagDao {
+    public void save(Tag tag){
+        Session session= SessionUtil.getSession();
+        Transaction transaction= session.beginTransaction();
 
-    public void save(Question domain) {
-        Session session = SessionUtil.getSession();
-        Transaction transaction = session.beginTransaction();
-        session.save(domain);
+        session.save(tag);
+
         transaction.commit();
         session.close();
     }
-    public Question find(Integer id){
+    public Tag find(Integer id){
         Session session = SessionUtil.getSession();
         Transaction transaction = session.beginTransaction();
-        Question question=session.get(Question.class,id);
+        Tag tag=session.get(Tag.class,id);
         transaction.commit();
         session.close();
-        return question;
+        return tag;
     }
-
-
 }
