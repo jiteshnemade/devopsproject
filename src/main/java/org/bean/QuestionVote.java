@@ -2,6 +2,7 @@ package org.bean;
 
 import javax.persistence.*;
 
+@Entity
 public class QuestionVote {
 
     @Id
