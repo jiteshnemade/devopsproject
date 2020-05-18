@@ -1,6 +1,8 @@
 package org.bean;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.Calendar;
 
@@ -11,7 +13,10 @@ public class Answer  {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer ansId;
 
-    @Column
+    public Answer() {
+    }
+
+    @Column(length = 64000)
     private String ansText;
 
     @Temporal(TemporalType.DATE)
@@ -20,7 +25,8 @@ public class Answer  {
     @OneToOne
     private User user;
 
-    @ManyToOne
+    @JsonIgnore
+    @ManyToOne(fetch = FetchType.EAGER)
     private Question question;
 
     public Integer getAnsId() {

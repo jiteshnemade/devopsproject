@@ -17,6 +17,9 @@ public class QuestionVote {
     @OneToOne
     private Question question;
 
+    public QuestionVote() {
+    }
+
     public Integer getQuesVoteId() {
         return quesVoteId;
     }

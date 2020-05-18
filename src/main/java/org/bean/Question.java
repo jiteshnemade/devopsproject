@@ -27,7 +27,7 @@ public class Question {
     @ManyToOne
     private User user;
 
-    public Question(Integer quesId, String q_sub, String q_desc, User user, Set<Answer> answerSet) {
+    public Question(Integer quesId, String q_sub, String q_desc, User user,Set<Answer> answerSet) {
         this.quesId = quesId;
         this.q_sub = q_sub;
         this.q_desc = q_desc;
@@ -59,10 +59,10 @@ public class Question {
         this.q_desc = q_desc;
     }
 
-    @OneToMany
-    private Set<Answer> answerSet = new HashSet<>();
+     @OneToMany(fetch = FetchType.EAGER)
+    private Set<Answer> answerSet; //= new HashSet<>();
 
-    @ManyToMany(fetch = FetchType.LAZY)
+    @ManyToMany(fetch = FetchType.EAGER,cascade = CascadeType.PERSIST)
     private Set<Tag> questionTags=new HashSet<>();
 
     public Integer getQuesId() {

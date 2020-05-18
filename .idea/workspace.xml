@@ -16,21 +16,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19aa1ddb-cb27-47b5-9159-4a8f3c788bb3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dao/TagDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/general.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/quilljs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/queryForum_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/queryForum_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/queryForum_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/queryForum_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/css/dataTables.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/css/dataTables.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/css/dataTables.bootstrap4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/css/dataTables.bootstrap4.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/css/dataTables.foundation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/css/dataTables.foundation.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/css/dataTables.jqueryui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/css/dataTables.jqueryui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/css/dataTables.semanticui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/css/dataTables.semanticui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/css/jquery.dataTables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/css/jquery.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/images/sort_asc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/images/sort_asc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/images/sort_both.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/images/sort_desc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/images/sort_desc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/js/dataTables.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/js/dataTables.bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/js/dataTables.bootstrap4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/js/dataTables.bootstrap4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/js/dataTables.foundation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/js/dataTables.foundation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/js/dataTables.jqueryui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/js/dataTables.jqueryui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/js/dataTables.semanticui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/js/dataTables.semanticui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/js/jquery.dataTables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/DataTables-1.10.20/js/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/datatables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/datatables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/datatables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/datatables/datatables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/forum.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/forum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/single-topic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/queryForum.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/queryForum.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/TestDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/TestDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bean/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bean/Answer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/bean/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bean/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bean/QuestionVote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bean/QuestionVote.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/bean/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bean/Tag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bean/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/controller/QuestionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/dao/QuestionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dao/QuestionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/dao/TagDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dao/TagDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/service/QuestionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/service/impl/QuestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/service/impl/QuestionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/submit_ques.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/submit_ques.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +222,9 @@
       <workItem from="1589691990579" duration="598000" />
       <workItem from="1589706662873" duration="1927000" />
       <workItem from="1589717752432" duration="5006000" />
-      <workItem from="1589726264611" duration="12515000" />
+      <workItem from="1589726264611" duration="14606000" />
+      <workItem from="1589779193300" duration="15131000" />
+      <workItem from="1589807453230" duration="6480000" />
     </task>
     <servers />
   </component>
@@ -217,62 +256,62 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="502" y="238" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1589393847223" />
-    <state x="1264" y="260" width="553" height="585" key="#com.intellij.ide.util.MemberChooser" timestamp="1589745797210">
+    <state x="1264" y="260" width="553" height="585" key="#com.intellij.ide.util.MemberChooser" timestamp="1589793158181">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="1264" y="260" width="553" height="585" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1589745797210" />
+    <state x="1264" y="260" width="553" height="585" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1589793158181" />
     <state x="827" y="338" width="424" height="484" key="FileChooserDialogImpl" timestamp="1589380414922">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="827" y="338" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1589380414922" />
-    <state width="596" height="323" key="GridCell.Tab.0.bottom" timestamp="1589741044491">
+    <state width="1244" height="2" key="GridCell.Tab.0.bottom" timestamp="1589817066335">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="596" height="323" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1589741044491" />
-    <state width="596" height="323" key="GridCell.Tab.0.center" timestamp="1589741044490">
+    <state width="1244" height="2" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1589817066335" />
+    <state width="1244" height="2" key="GridCell.Tab.0.center" timestamp="1589817066335">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="596" height="323" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1589741044490" />
-    <state width="596" height="323" key="GridCell.Tab.0.left" timestamp="1589741044490">
+    <state width="1244" height="2" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1589817066335" />
+    <state width="1244" height="2" key="GridCell.Tab.0.left" timestamp="1589817066334">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="596" height="323" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1589741044490" />
-    <state width="596" height="323" key="GridCell.Tab.0.right" timestamp="1589741044491">
+    <state width="1244" height="2" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1589817066334" />
+    <state width="1244" height="2" key="GridCell.Tab.0.right" timestamp="1589817066335">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="596" height="323" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1589741044491" />
-    <state width="596" height="323" key="GridCell.Tab.1.bottom" timestamp="1589741044492">
+    <state width="1244" height="2" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1589817066335" />
+    <state width="1244" height="2" key="GridCell.Tab.1.bottom" timestamp="1589817066336">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="596" height="323" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1589741044492" />
-    <state width="596" height="323" key="GridCell.Tab.1.center" timestamp="1589741044491">
+    <state width="1244" height="2" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1589817066336" />
+    <state width="1244" height="2" key="GridCell.Tab.1.center" timestamp="1589817066336">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="596" height="323" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1589741044491" />
-    <state width="596" height="323" key="GridCell.Tab.1.left" timestamp="1589741044491">
+    <state width="1244" height="2" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1589817066336" />
+    <state width="1244" height="2" key="GridCell.Tab.1.left" timestamp="1589817066336">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="596" height="323" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1589741044491" />
-    <state width="596" height="323" key="GridCell.Tab.1.right" timestamp="1589741044492">
+    <state width="1244" height="2" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1589817066336" />
+    <state width="1244" height="2" key="GridCell.Tab.1.right" timestamp="1589817066336">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="596" height="323" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1589741044492" />
-    <state width="596" height="323" key="GridCell.Tab.2.bottom" timestamp="1589741044492">
+    <state width="1244" height="2" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1589817066336" />
+    <state width="1244" height="2" key="GridCell.Tab.2.bottom" timestamp="1589817066336">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="596" height="323" key="GridCell.Tab.2.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1589741044492" />
-    <state width="596" height="323" key="GridCell.Tab.2.center" timestamp="1589741044492">
+    <state width="1244" height="2" key="GridCell.Tab.2.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1589817066336" />
+    <state width="1244" height="2" key="GridCell.Tab.2.center" timestamp="1589817066335">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="596" height="323" key="GridCell.Tab.2.center/67.27.1853.1053@67.27.1853.1053" timestamp="1589741044492" />
-    <state width="596" height="323" key="GridCell.Tab.2.left" timestamp="1589741044492">
+    <state width="1244" height="2" key="GridCell.Tab.2.center/67.27.1853.1053@67.27.1853.1053" timestamp="1589817066335" />
+    <state width="1244" height="2" key="GridCell.Tab.2.left" timestamp="1589817066335">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="596" height="323" key="GridCell.Tab.2.left/67.27.1853.1053@67.27.1853.1053" timestamp="1589741044492" />
-    <state width="596" height="323" key="GridCell.Tab.2.right" timestamp="1589741044492">
+    <state width="1244" height="2" key="GridCell.Tab.2.left/67.27.1853.1053@67.27.1853.1053" timestamp="1589817066335" />
+    <state width="1244" height="2" key="GridCell.Tab.2.right" timestamp="1589817066336">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="596" height="323" key="GridCell.Tab.2.right/67.27.1853.1053@67.27.1853.1053" timestamp="1589741044492" />
+    <state width="1244" height="2" key="GridCell.Tab.2.right/67.27.1853.1053@67.27.1853.1053" timestamp="1589817066336" />
     <state x="886" y="197" width="1024" height="845" key="SettingsEditor" timestamp="1589399349658">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

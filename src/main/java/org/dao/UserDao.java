@@ -6,6 +6,8 @@ import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 import org.util.SessionUtil;
 
+import java.util.List;
+
 public class UserDao {
     public void save(User user){
         Session session= SessionUtil.getSession();
@@ -41,6 +43,18 @@ public class UserDao {
             return null;
         }
 
+        return user;
+    }
+    public List<User> findAll(){
+        Session session = SessionUtil.getSession();
+        Transaction transaction = session.beginTransaction();
+
+        String hql = "FROM User";
+        Query query = session.createQuery(hql);
+        List<User> user = query.list();
+
+        transaction.commit();;
+        session.close();
         return user;
     }
     public User findByEmailPassword(String email,String password){

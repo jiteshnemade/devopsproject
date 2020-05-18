@@ -11,6 +11,7 @@ import javax.ws.rs.core.NewCookie;
 import javax.ws.rs.core.Response;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.List;
 
 @Path("user")
 public class UserController {
@@ -73,4 +74,14 @@ public class UserController {
 
 
     }
+    @GET
+    @Path("/getall")
+    @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    public Response listDomains() {
+        System.out.println("called");
+        List<User> users = userService.findAll();
+
+        return Response.ok().entity(users).build();
+    }
+
 }

@@ -4,6 +4,8 @@ import org.bean.User;
 import org.dao.UserDao;
 import org.service.UserService;
 
+import java.util.List;
+
 public class UserServiceImpl implements UserService {
 
 
@@ -25,5 +27,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public User verifyByEmailPassword(String email, String password) {
         return userDao.findByEmailPassword(email,password);
+    }
+
+    @Override
+    public List<User> findAll() {
+        return userDao.findAll();
     }
 }

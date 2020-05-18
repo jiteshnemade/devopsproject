@@ -6,12 +6,11 @@ import org.service.QuestionService;
 import org.service.UserService;
 import org.service.impl.QuestionServiceImpl;
 
-import javax.ws.rs.Consumes;
-import javax.ws.rs.CookieParam;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import java.awt.*;
+import java.util.List;
 import java.util.TimeZone;
 
 @Path("question")
@@ -32,5 +31,20 @@ public class QuestionController {
 
         questionService.save(question,q_tags,userId);
 
+    }
+
+    @Path("/getall")
+    @GET
+    @Produces({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
+    public Response showAllStudentOffer() {
+        List<Question> questionList = questionService.findAll();
+        System.out.println(questionList.size());
+        if (questionList.size()==0) {
+            System.out.println("No containt");
+
+            return Response.noContent().build();
+        }
+
+        return Response.ok().entity(questionList).build();
     }
 }
