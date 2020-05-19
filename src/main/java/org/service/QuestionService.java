@@ -14,4 +14,5 @@ public interface QuestionService {
     void save(Question question);
     List<Question> findAll();
     void save(Question question, String q_tags, String userId);
+    Question find(int id);
 }

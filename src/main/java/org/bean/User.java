@@ -1,6 +1,10 @@
 package org.bean;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class User {
@@ -17,6 +21,22 @@ public class User {
 
     private String name;
     private String email;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "user")
+    private List<QuestionVote> questionVoteList=new ArrayList<>();
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "user")
+    private List<AnswerVote> answerVoteList=new ArrayList<>();
+
+    public List<QuestionVote> getQuestionVoteList() {
+        return questionVoteList;
+    }
+
+    public void setQuestionVoteList(List<QuestionVote> questionVoteList) {
+        this.questionVoteList = questionVoteList;
+    }
 
     public User() {
     }

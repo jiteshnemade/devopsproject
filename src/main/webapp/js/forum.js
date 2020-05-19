@@ -4,22 +4,32 @@ $(document).ready(function() {
     $('#question_table').DataTable();
 } );*/
 var api = "webapi/question/getall";
-prompt('outside get')
 $.get(api, function (questions, status) {
-    prompt('In get'+questions.length);
     if (status == "success") {
         var question_data = "";
         for (var i = 0; i < questions.length; i++) {
             //var msg= '<a href="applications.html?offerid=' + offer[i].id +  '">view</a>';
             var date=new Date(questions[i].quesTimeStamp);
             var cell1 = '<th scope="row" class="dx-table-topics">\n' +
-                '<a href="single-topic.html" class="dx-table-default-title">'+ questions[i].q_sub+'</a>\n' +
+                '<a href="single-topic.html?qId='+ questions[i].quesId +'" class="dx-table-default-title" >'+ questions[i].q_sub+'</a>\n' +
                 '<div class="dx-table-default-info">' +
                 '<p class="mb-0">by <a href="#">'+ questions[i].user.name+'</a> <span class="dib">'+ date.toDateString()+',</span> <span class="dib">'+ date.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })+'</span></p>\n' +
                 '</div>\n' +
                 '</th>' ;
-            var cell2 ='<td>45</td>';
-            var cell3 ='<td>12058</td>';
+            var upvotes = 0;
+            var downvotes = 0;
+            for(var j=0;j<questions[i].questionVoteList.length;j++){
+                if(questions[i].questionVoteList[j].vote==1){
+                    upvotes++;
+                }
+                if(questions[i].questionVoteList[j].vote==-1){
+                    downvotes++;
+                }
+            }
+            var cell2 ='<td>' + upvotes + '</td>';
+            var cell3 ='<td>' + downvotes +  '</td>';
+
+
 /*            var cell4 ='<td class="dx-table-lastPost">\n' +
                 '<div class="dx-table-default-info">\n' +
                 ' <p class="mb-0">by <a href="#">Joseph Harper</a> <span class="dib">24 Feb 2018,</span> <span class="dib">09:00 am</span></p>\n' +

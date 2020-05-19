@@ -1,5 +1,7 @@
 package org.bean;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 
 @Entity
@@ -12,9 +14,17 @@ public class AnswerVote {
     @Column
     private Integer vote; //+1 for upvote ; -1 for downvote
 
-    @OneToOne
+    @JsonIgnore
+    @ManyToOne
     private User user;
 
+    @JsonIgnore
+    @ManyToOne
+    private Answer answer;
+
+
+
+    @JsonIgnore
     @OneToOne
     private Answer ans;
 

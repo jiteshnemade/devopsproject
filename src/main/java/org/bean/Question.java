@@ -1,12 +1,11 @@
 package org.bean;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.sql.Timestamp;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 @Entity
 public class Question {
@@ -27,7 +26,25 @@ public class Question {
     @ManyToOne
     private User user;
 
-    public Question(Integer quesId, String q_sub, String q_desc, User user,Set<Answer> answerSet) {
+    @JsonIgnore
+    @OneToMany(fetch = FetchType.EAGER,mappedBy = "question")
+    private Set<Answer> answerSet= new HashSet<>();
+
+    @ManyToMany(fetch = FetchType.EAGER,cascade = CascadeType.PERSIST)
+    private Set<Tag> questionTags=new HashSet<>();
+
+    @OneToMany(mappedBy = "question",fetch = FetchType.EAGER)
+    private List<QuestionVote> questionVoteList=new ArrayList<>();
+
+    public List<QuestionVote> getQuestionVoteList() {
+        return questionVoteList;
+    }
+
+    public void setQuestionVoteList(List<QuestionVote> questionVoteList) {
+        this.questionVoteList = questionVoteList;
+    }
+
+    public Question(Integer quesId, String q_sub, String q_desc, User user, Set<Answer> answerSet) {
         this.quesId = quesId;
         this.q_sub = q_sub;
         this.q_desc = q_desc;
@@ -59,11 +76,7 @@ public class Question {
         this.q_desc = q_desc;
     }
 
-     @OneToMany(fetch = FetchType.EAGER)
-    private Set<Answer> answerSet; //= new HashSet<>();
 
-    @ManyToMany(fetch = FetchType.EAGER,cascade = CascadeType.PERSIST)
-    private Set<Tag> questionTags=new HashSet<>();
 
     public Integer getQuesId() {
         return quesId;

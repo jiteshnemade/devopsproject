@@ -55,6 +55,18 @@
 
     <!-- jQuery -->
     <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Include the Quill library -->
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+    <!-- Include stylesheet -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.quilljs.com/1.3.6/quill.core.css">
+
+    <script src="js/single-topic.js"></script>
     
     
 </head>
@@ -553,26 +565,14 @@
             <div class="col-lg-12">
                 <div class="dx-box dx-box-decorated">
                     <div class="dx-blog-post">
-                        <div class="dx-blog-post-box pt-30 pb-30">
-                            <h2 class="h4 mnt-5 mb-9"> Question here Having problem with Logo</h2>
-                            
-                            
-<!-- START: Breadcrumbs -->
-<ul class="dx-breadcrumbs text-left dx-breadcrumbs-dark mnb-6 fs-14">
-    
-    <li><a href="help-center.html">Support Home</a></li>
-    
-    
-    <li><a href="forums.html">Forums</a></li>
-    
-    
-    <li><a href="topics.html">Design with pleasure</a></li>
-    
-    <li>Having problem with Logo</li>
-    
-    
-</ul>
-<!-- END: Breadcrumbs -->
+                        <div  class="dx-blog-post-box pt-30 pb-30">
+                            <h2 id="question_heading" name="question_heading" class="h4 mnt-5 mb-9"> Question Title</h2>
+                            <div id="question_description" name="question_description"></div>
+
+
+
+
+                            <!-- END: Breadcrumbs -->
 
                         </div>
                         <div class="dx-separator"></div>

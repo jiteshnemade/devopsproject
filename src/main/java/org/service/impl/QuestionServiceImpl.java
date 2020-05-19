@@ -3,6 +3,7 @@ package org.service.impl;
 import org.bean.Question;
 import org.bean.Tag;
 import org.bean.User;
+import org.hibernate.Session;
 import org.service.QuestionService;
 
 import java.util.HashSet;
@@ -36,5 +37,10 @@ public class QuestionServiceImpl implements QuestionService {
         User user=userDao.find(Integer.parseInt(userId));
         question.setUser(user);
         questionDao.save(question);
+    }
+
+    @Override
+    public Question find(int id) {
+        return questionDao.find(id);
     }
 }
