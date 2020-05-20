@@ -21,6 +21,8 @@ public class AnswerController {
                                     @CookieParam("queryForum_userid") Integer userId,
                                     @FormDataParam("answer") String answer
                                     ){
+        answerService.add(questionId,userId,answer);
+
 
     }
 

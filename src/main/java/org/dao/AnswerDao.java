@@ -26,4 +26,13 @@ public class AnswerDao {
 
         return answerList;
     }
+    public void save(Answer answer) {
+        Session session = SessionUtil.getSession();
+        Transaction transaction = session.beginTransaction();
+        session.save(answer);
+        transaction.commit();
+        session.close();
+    }
+
+
 }

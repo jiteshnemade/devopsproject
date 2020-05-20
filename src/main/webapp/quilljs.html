@@ -51,14 +51,37 @@
         },
         theme: 'snow'
     });
+
     var quill2 = new Quill('#editor2',{
     });
+   /* var ques_data='{\"ops\":[{\"insert\":\"what is corona death rate?\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"why is it so large??\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"\\t\\tThere is no Vaccine for corona disease.\"},{\"insert\":\"\\n\"}]}';
+    prompt(ques_data);
+    var questiondelta = JSON.parse(ques_data);
+    quill2.setContent(questiondelta);*/
 
-    $('#saveDelta').click(function () {
-        var delta=quill.getContents();
+
+ /*  var api="webapi/question/get/2";
+        $.get(api, function (question, status) {
+        if (status == "success") {
+            //add question data to various html elements
+            prompt(question.q_desc);
+
+            var questiondelta = JSON.parse(question.q_desc);
+            quill2.setContent(questiondelta);
+        }
+    });*/
+
+   $('#saveDelta').click(function () {
+        /*var delta=quill.getContents();
         var stringdata=JSON.stringify(delta);
+        stringdata = escape(stringdata);
         prompt(stringdata);
-        var delta2=JSON.parse(stringdata);
+        stringdata =unescape(stringdata);
+        prompt(stringdata)*/
+        var str="%7B%22ops%22%3A%5B%7B%22insert%22%3A%22One%22%7D%2C%7B%22attributes%22%3A%7B%22list%22%3A%22ordered%22%7D%2C%22insert%22%3A%22%5Cn%22%7D%2C%7B%22insert%22%3A%22two%22%7D%2C%7B%22attributes%22%3A%7B%22list%22%3A%22ordered%22%7D%2C%22insert%22%3A%22%5Cn%22%7D%2C%7B%22insert%22%3A%22three%22%7D%2C%7B%22attributes%22%3A%7B%22list%22%3A%22ordered%22%7D%2C%22insert%22%3A%22%5Cn%22%7D%5D%7D";
+        str = unescape(str);
+        prompt(str);
+        var delta2=JSON.parse(str);
         quill2.setContents(delta2);
         //prompt(delta);
 

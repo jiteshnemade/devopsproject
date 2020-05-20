@@ -57,16 +57,12 @@
     <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-    <!-- Include the Quill library -->
-    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
-
-    <!-- Include stylesheet -->
-    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.quilljs.com/1.3.6/quill.core.css">
 
     <script src="js/single-topic.js"></script>
+
+
+    <!--<script src="js/single-topic.js"></script>-->
     
     
 </head>
@@ -567,21 +563,32 @@
                     <div class="dx-blog-post">
                         <div  class="dx-blog-post-box pt-30 pb-30">
                             <h2 id="question_heading" name="question_heading" class="h4 mnt-5 mb-9"> Question Title</h2>
-                            <div id="question_description" name="question_description"></div>
+                            <div class="dx-comment-head">
+                                <a href="#" id="question_user" name="question_user" class="dx-comment-name">John Leonard</a>
+                                <div id="question_time" name="question_time" class="dx-comment-date">12 Sep 2018 7:40 am</div>
 
+                            </div>
 
+                            <!--<div id="question_description" name="question_description" ></div>-->
+                            <!-- END: Breadcrumbs -->
 
-
+                        </div>
+                        <div  class="dx-blog-post-box pt-30 pb-30">
+                            <h2  class="h4 mnt-5 mb-9"> Question Description</h2>
+                           <div class="dx-editor-quill">
+                                <div id="question_description" name="question_description" data-editor-height="150" data-editor-maxHeight="250"></div>
+                            </div>
+                            <!--<div id="question_description" name="question_description" ></div>-->
                             <!-- END: Breadcrumbs -->
 
                         </div>
                         <div class="dx-separator"></div>
-
-                        <div class="dx-comment dx-topic-comment">
+                        <div  class="dx-blog-post-box pt-10 pb-10">
+                            <h2 class="h4 mnt-5 mb-9" style="text-align:center"> Answers</h2>
+                        </div>
+                        <div id="answer_list" name="answer_list">
+                        <div  class="dx-comment dx-topic-comment">
                             <div>
-                                <div class="dx-comment-img">
-                                    <img src="assets/images/avatar-1.png" alt="">
-                                </div>
                                 <div class="dx-comment-cont">
                                     <div class="dx-comment-head">
                                         <a href="#" class="dx-comment-name">John Leonard</a>
@@ -596,9 +603,6 @@
                         </div>
                         <div class="dx-comment dx-topic-comment">
                             <div>
-                                <div class="dx-comment-img">
-                                    <img src="assets/images/avatar-default.svg" alt="">
-                                </div>
                                 <div class="dx-comment-cont">
                                     <div class="dx-comment-head">
                                         <a href="#" class="dx-comment-name">Bruno Rice</a>
@@ -616,7 +620,7 @@
                                 </div>
                             </div>
                         </div>
-
+                        </div>
                         <div class="dx-blog-post-box pt-30 pb-30">
                             <ul class="dx-pagination">
                                 <li class="dx-pagination-icon"><a href="#"><span class="icon pe-7s-angle-left"></span></a></li>
@@ -638,34 +642,16 @@
                             <form class="dx-form" action="#">
                                 <div class="dx-form-group">
                                     <div class="dx-editor-quill">
-                                        <div class="dx-editor" data-editor-height="150" data-editor-maxHeight="250"></div>
+                                        <div id="answer_editor" name="answer_editor"  style="min-height:150px;" data-editor-height="150" data-editor-maxHeight="250"></div>
                                     </div>
                                 </div>
                                 <div class="dx-form-group">
-                                    <!-- STRART: Dropzone
 
-                                        Additional Attributes:
-                                        data-dropzone-action
-                                        data-dropzone-maxMB
-                                        data-dropzone-maxFiles
-                                    -->
-                                    <div class="dx-dropzone" data-dropzone-action="#" data-dropzone-maxMB="5" data-dropzone-maxFiles="5">
-                                        <div class="dz-message">
-                                            <div class="dx-dropzone-icon">
-                                                <span class="icon pe-7s-cloud-upload"></span>
-                                            </div>
-                                            <div class="h6 dx-dropzone-title">Drop files here or click to upload</div>
-                                            <div class="dx-dropzone-text">
-                                                <p class="mnb-5 mnt-1">You can upload up to 5 files (maximum 5 MB each) of the following types: .jpg, .jpeg, .png, .zip.</p>
-                                            </div>
-                                        </div>
-                                    </div>
+
                                     <div class="row justify-content-between vertical-gap dx-dropzone-attachment">
-                                        <div class="col-auto dx-dropzone-attachment-add">
-                                            <label class="mb-0" class="mnt-7"><span class="icon fas fa-paperclip mr-10"></span><span>Add Attachment</span></label>
-                                        </div>
+
                                         <div class="col-auto dx-dropzone-attachment-btn">
-                                            <button class="dx-btn dx-btn-lg" type="button" name="button">Submit a ticket</button>
+                                            <button onclick="submitAnswer()" class="dx-btn dx-btn-lg" type="button"  name="button">Submit Answer</button>
                                         </div>
                                     </div>
                                     <!-- END: Dropzone -->
@@ -946,9 +932,11 @@
     </div>
 </div>
 
-    
 
-    
+
+
+
+
 <!-- START: Scripts -->
 
 <!-- Object Fit Images -->
@@ -1001,7 +989,6 @@
 <script src="assets/js/amdesk.min.js"></script>
 <script src="assets/js/amdesk-init.js"></script>
 <!-- END: Scripts -->
-
 
     
 </body>

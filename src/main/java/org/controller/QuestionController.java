@@ -33,6 +33,15 @@ public class QuestionController {
 
     }
 
+    @Path("/get/{qid}")
+    @GET
+    @Produces({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
+    public Response showAllStudentOffer(@PathParam("qid") Integer questionId) {
+        Question question = questionService.find(questionId);
+
+        return Response.ok().entity(question).build();
+    }
+
     @Path("/getall")
     @GET
     @Produces({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})

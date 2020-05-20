@@ -55,7 +55,7 @@ public class UserController {
             NewCookie cookie3 = new NewCookie("queryForum_useremail",user.getEmail(),"/","localhost","my first cookie",30*60,false);
             NewCookie cookie4 = new NewCookie("queryForum_name",user.getName(),"/","localhost","my first cookie",30*60,false);
 
-            return Response.seeOther(new URI("/queryForum_war/account.html")).cookie(cookie1,cookie2,cookie3,cookie4).build();
+            return Response.seeOther(new URI("/queryForum_war/forum.html")).cookie(cookie1,cookie2,cookie3,cookie4).build();
 
         }
 

@@ -8,7 +8,7 @@ function  addQuestion() {
     });
     var delta=quill.getContents();
     var stringdata=JSON.stringify(delta);
-    prompt(stringdata);
+    //stringdata = escape(stringdata);
     fdata.append("q_desc",stringdata);
 
 
@@ -39,7 +39,7 @@ function  addQuestion() {
 
         },
         error: function (e) {
-            //alert("error "+e);
+            alert("error "+e);
             console.log("ERROR : ", e.responseText);
 
         }
