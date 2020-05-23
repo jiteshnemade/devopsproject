@@ -6,10 +6,7 @@ import org.hibernate.annotations.LazyCollection;
 import org.hibernate.annotations.LazyCollectionOption;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 @Entity
 public class Answer  {
@@ -35,7 +32,7 @@ public class Answer  {
 
     @LazyCollection(LazyCollectionOption.FALSE)
     @OneToMany(mappedBy = "answer")
-    private List<AnswerVote> answerVoteList=new ArrayList<>();
+    private Set<AnswerVote> answerVoteList=new HashSet<>();
 
 
 
@@ -64,11 +61,11 @@ public class Answer  {
         this.ansTimeStamp = ansTimeStamp;
     }
 
-    public List<AnswerVote> getAnswerVoteList() {
+    public Set<AnswerVote> getAnswerVoteList() {
         return answerVoteList;
     }
 
-    public void setAnswerVoteList(List<AnswerVote> answerVoteList) {
+    public void setAnswerVoteList(Set<AnswerVote> answerVoteList) {
         this.answerVoteList = answerVoteList;
     }
 

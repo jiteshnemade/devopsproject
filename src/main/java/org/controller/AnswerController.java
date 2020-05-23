@@ -22,8 +22,6 @@ public class AnswerController {
                                     @FormDataParam("answer") String answer
                                     ){
         answerService.add(questionId,userId,answer);
-
-
     }
 
     @Path("/get/{qid}")

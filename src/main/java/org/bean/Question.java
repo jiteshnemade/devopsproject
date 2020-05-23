@@ -34,13 +34,13 @@ public class Question {
     private Set<Tag> questionTags=new HashSet<>();
 
     @OneToMany(mappedBy = "question",fetch = FetchType.EAGER)
-    private List<QuestionVote> questionVoteList=new ArrayList<>();
+    private Set<QuestionVote> questionVoteList=new HashSet<>();
 
-    public List<QuestionVote> getQuestionVoteList() {
+    public Set<QuestionVote> getQuestionVoteList() {
         return questionVoteList;
     }
 
-    public void setQuestionVoteList(List<QuestionVote> questionVoteList) {
+    public void setQuestionVoteList(Set<QuestionVote> questionVoteList) {
         this.questionVoteList = questionVoteList;
     }
 

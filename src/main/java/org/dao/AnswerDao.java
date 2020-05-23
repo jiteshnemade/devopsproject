@@ -26,6 +26,14 @@ public class AnswerDao {
 
         return answerList;
     }
+    public Answer find(Integer id){
+        Session session = SessionUtil.getSession();
+        Transaction transaction = session.beginTransaction();
+        Answer answer=session.get(Answer.class,id);
+        transaction.commit();
+        session.close();
+        return answer;
+    }
     public void save(Answer answer) {
         Session session = SessionUtil.getSession();
         Transaction transaction = session.beginTransaction();

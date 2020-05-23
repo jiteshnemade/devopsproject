@@ -73,6 +73,8 @@ public class UserDao {
         catch (javax.persistence.NoResultException e){
             return null;
         }
+        transaction.commit();
+        session.close();
 
         return user;
     }

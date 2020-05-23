@@ -580,6 +580,12 @@
                             </div>
                             <!--<div id="question_description" name="question_description" ></div>-->
                             <!-- END: Breadcrumbs -->
+                            <br>
+                            <div>
+                                <button  id="question_upvote" class="dx-btn dx-btn-lg" type="button" onclick="questionUpvote()" >Upvote</button>
+                                <button id="question_downvote" class="dx-btn dx-btn-lg"  style="background-color: #a14a4f " type="button" onclick="questionDownvote()">DownVote</button>
+
+                            </div>
 
                         </div>
                         <div class="dx-separator"></div>
@@ -587,7 +593,7 @@
                             <h2 class="h4 mnt-5 mb-9" style="text-align:center"> Answers</h2>
                         </div>
                         <div id="answer_list" name="answer_list">
-                        <div  class="dx-comment dx-topic-comment">
+                        <!--<div  class="dx-comment dx-topic-comment">
                             <div>
                                 <div class="dx-comment-cont">
                                     <div class="dx-comment-head">
@@ -619,21 +625,15 @@
                                     </div>
                                 </div>
                             </div>
+                            <br>
+                            <div>
+                                <button id="noUse1" class="dx-btn dx-btn-lg" type="button"  onclick="answerUpvote(this.id)">Upvote</button>
+                                <button id="noUse2" class="dx-btn dx-btn-lg" type="button" style="background-color: #a14a4f" onclick="answerDownvote(this.id)" >DownVote</button>
+
+                            </div>
+                        </div>-->
                         </div>
-                        </div>
-                        <div class="dx-blog-post-box pt-30 pb-30">
-                            <ul class="dx-pagination">
-                                <li class="dx-pagination-icon"><a href="#"><span class="icon pe-7s-angle-left"></span></a></li>
-                                <li><a href="#">1</a></li>
-                                <li class="dx-pagination-space">...</li>
-                                <li><a href="#">8</a></li>
-                                <li class="active"><a href="#">9</a></li>
-                                <li><a href="#">10</a></li>
-                                <li class="dx-pagination-space">...</li>
-                                <li><a href="#">18</a></li>
-                                <li class="dx-pagination-icon"><a href="#"><span class="icon pe-7s-angle-right"></span></a></li>
-                            </ul>
-                        </div>
+
                         <div class="dx-separator"></div>
 
                         <div class="dx-blog-post-box">

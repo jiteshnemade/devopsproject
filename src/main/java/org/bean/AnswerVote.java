@@ -23,10 +23,13 @@ public class AnswerVote {
     private Answer answer;
 
 
+    public Answer getAnswer() {
+        return answer;
+    }
 
-    @JsonIgnore
-    @OneToOne
-    private Answer ans;
+    public void setAnswer(Answer answer) {
+        this.answer = answer;
+    }
 
     public Integer getAnsVoteId() {
         return ansVoteId;
@@ -52,11 +55,4 @@ public class AnswerVote {
         this.user = user;
     }
 
-    public Answer getAns() {
-        return ans;
-    }
-
-    public void setAns(Answer ans) {
-        this.ans = ans;
-    }
 }
