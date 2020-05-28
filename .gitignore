@@ -1,4 +1,2 @@
-.idea/*
 /target/*
 info.txt
-src/main/resources/hibernate.properties
