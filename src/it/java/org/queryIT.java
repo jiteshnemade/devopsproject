@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit;
 public class queryIT {
     private static WebDriver driver;
     //String URL = "http://localhost:8081/";
-    String URL="http://localhost:8090/queryForum_war/";
+    String URL="http://localhost:8081/queryForum_war/";
 
     @BeforeClass
     public static void setDriver() {
