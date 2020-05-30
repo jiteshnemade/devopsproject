@@ -36,6 +36,7 @@ function  addQuestion() {
             //$("#result").text(data);
            // alert("Added Success");
             console.log("SUCCESS : ", data);
+            window.location.href = "/queryForum_war/forum.html";
 
         },
         error: function (e) {
